@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angular Application</title>
+	<base href="/">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="../styles/main.scss" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="header clearfix">
+			<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+			  <ul class="nav nav-pills pull-right">
+			    <li role="presentation" class="active"><a href="/#!/employees"><span class="glyphicon glyphicon-th-list"> </span> Employee List</a></li>
+			    <li role="presentation"><a  href="/#!/employees/create" > 
+			    <span class="glyphicon glyphicon-plus"> </span>	Add New Employee</a></li>
+			  </ul>
+         <ul class="nav nav-pills pull-left">
+			    <li role="presentation" class="active"><a href="/#!/organizations"><span class="glyphicon glyphicon-th-list"> </span>Organization List</a></li>
+			    <li role="presentation"><a  href="/#!/organizations/create"> 
+			    <span class="glyphicon glyphicon-plus"> </span>	Add New Organization</a></li>
+			  </ul>
+			</nav>
+      </div>
+		</div>
+    <br>
+    <br>
+		<div ng-view></div>
+		
+		<footer class="footer well well-sm">
+		    <p>Please Visit Again</p>
+		</footer>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.8/angular-route.min.js"></script>
+ 
+ 
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/app.js"></script>
+
+        
+        
+          <!--CONTROLLERS-->
+        <script src="scripts/controllers/employeeController/addEmployee.js"></script>
+        <script src="scripts/controllers/employeeController/deleteEmployee.js"></script>
+        <script src="scripts/controllers/employeeController/getEmployee.js"></script>
+        <script src="scripts/controllers/employeeController/showEmployee.js"></script>
+        <script src="scripts/controllers/employeeController/updateEmployee.js"></script>
+     
+
+        <script src="scripts/controllers/organizationController/addOrganization.js"></script>
+        <script src="scripts/controllers/organizationController/deleteOrganization.js"></script>
+        <script src="scripts/controllers/organizationController/getOrganization.js"></script>
+        <script src="scripts/controllers/organizationController/showOrganization.js"></script>
+        <script src="scripts/controllers/organizationController/updateOrganization.js"></script>
+
+
+
+
+
+        <!-- endbuild -->
+
+
+</body>
+</html>
